@@ -1,0 +1,96 @@
+@Entry
+@Component
+struct Grid_3_View_Page {
+  @State message: string = 'Hello World'
+
+  build() {
+    Column() {
+       Grid(){
+         GridItem(){
+           Text("1")
+             .fontSize(16)
+             .fontColor(Color.White)
+             .backgroundColor(0x007DFF)
+             .width('100%')
+             .height('100%')
+             .textAlign(TextAlign.Center)
+         }
+         GridItem(){
+           Text("2")
+             .fontSize(16)
+             .fontColor(Color.White)
+             .backgroundColor(0x007DFF)
+             .width('100%')
+             .height('100%')
+             .textAlign(TextAlign.Center)
+         }
+         GridItem(){
+           Text("3")
+             .fontSize(16)
+             .fontColor(Color.White)
+             .backgroundColor(0x007DFF)
+             .width('100%')
+             .height('100%')
+             .textAlign(TextAlign.Center)
+         }
+         .columnStart(3)
+         .columnEnd(4)
+         GridItem(){
+           Text("4")
+             .fontSize(16)
+             .fontColor(Color.White)
+             .backgroundColor(0x007DFF)
+             .width('100%')
+             .height('100%')
+             .textAlign(TextAlign.Center)
+         }.rowStart(2)
+         .rowEnd(3)
+         GridItem(){
+           Text("5")
+             .fontSize(16)
+             .fontColor(Color.White)
+             .backgroundColor(0x007DFF)
+             .width('100%')
+             .height('100%')
+             .textAlign(TextAlign.Center)
+         }
+         GridItem(){
+           Text("6")
+             .fontSize(16)
+             .fontColor(Color.White)
+             .backgroundColor(0x007DFF)
+             .width('100%')
+             .height('100%')
+             .textAlign(TextAlign.Center)
+         }
+         GridItem(){
+           Text("7")
+             .fontSize(16)
+             .fontColor(Color.White)
+             .backgroundColor(0x007DFF)
+             .width('100%')
+             .height('100%')
+             .textAlign(TextAlign.Center)
+         }
+         GridItem(){
+           Text("8")
+             .fontSize(16)
+             .fontColor(Color.White)
+             .backgroundColor(0x007DFF)
+             .width('100%')
+             .height('100%')
+             .textAlign(TextAlign.Center)
+         }.columnStart(2)
+          .columnEnd(4)
+       }
+      .columnsTemplate(`1fr 1fr 1fr 1fr`)
+      .rowsTemplate(`1fr 1fr 1fr`)
+       .columnsGap(10)
+       .rowsGap(10)
+      .height(300)
+      .padding(10)
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
